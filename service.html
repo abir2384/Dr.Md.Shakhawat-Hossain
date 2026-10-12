@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>*,*::before,*::after{box-sizing:border-box}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Service | Dr. Md. Shakhawat Hossain</title>
+<meta name="description" content="Dr. Md. Shakhawat Hossain, Professor and Chairman, Department of Management Studies, University of Barishal, Bangladesh. Research in sustainable tourism, technology adoption, entrepreneurship and HRM.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="bar">
+  <div class="wrap">
+    <a class="mark" href="index.html">Md. Shakhawat Hossain</a>
+    <nav aria-label="Main"><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="research.html">Research</a></li><li><a href="publications.html">Publications</a></li><li><a href="projects.html">Projects</a></li><li><a href="talks.html">Talks</a></li><li><a href="teaching.html">Teaching</a></li><li><a href="service.html" aria-current="page">Service</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+  </div>
+</header>
+<main>
+<div class="banner"><div class="wrap"><p class="crumb"><a href="index.html">Home</a> / Service</p><h1>Service</h1><p>Peer review, editorial work and university leadership.</p></div></div>
+<section id="service" class="solo">
+    <div class="wrap">
+      
+      <div class="body">
+        <div class="figure">
+          <div><b>80</b><small>Verified reviews</small></div>
+          <div><b>31</b><small>Journals and grant bodies</small></div>
+        </div>
+        <div>
+          <h3 class="sub">Journals reviewed for (ORCID-verified counts)</h3>
+          <ul class="reviews">
+            <li><span>Journal of Hospitality and Tourism Insights</span><span>12</span></li>
+            <li><span>Discover Sustainability</span><span>8</span></li>
+            <li><span>Journal of Research in Interactive Marketing</span><span>6</span></li>
+            <li><span>Scientific Reports</span><span>6</span></li>
+            <li><span>Humanities &amp; Social Sciences Communications</span><span>5</span></li>
+            <li><span>Social Sciences &amp; Humanities Open</span><span>5</span></li>
+            <li><span>Journal of Global Entrepreneurship Research</span><span>4</span></li>
+            <li><span>Discover Cities</span><span>3</span></li>
+            <li><span>Acta Psychologica</span><span>2</span></li>
+            <li><span>Asia Pacific Journal of Marketing and Logistics</span><span>2</span></li>
+            <li><span>BMC Psychology</span><span>2</span></li>
+            <li><span>Business Strategy and Development</span><span>2</span></li>
+            <li><span>Cogent Business &amp; Management</span><span>2</span></li>
+            <li><span>Quality &amp; Quantity</span><span>2</span></li>
+            <li><span>Heliyon</span><span>1</span></li>
+            <li><span>Sustainable Development</span><span>1</span></li>
+            <li><span>Journal of Quality Assurance in Hospitality &amp; Tourism</span><span>1</span></li>
+            <li><span>and 14 other journals</span><span>16</span></li>
+          </ul>
+        </div>
+        <div class="cols">
+          <div class="prose">
+            <h3 class="sub">Editorial and professional</h3>
+            <ul class="plain">
+              <li>Editorial Board Member, <i>Social Sciences &amp; Humanities in Asia Journal</i> (Malaysia)</li>
+              <li>Editorial Member, <i>Barishal University Journal of Business Studies</i></li>
+              <li>Advisory Board Member, <i>Bulletin of Business, Economics and Psychology</i> (Nepal)</li>
+              <li>Reviewer Panel Member, Grants for Advanced Research in Education (GARE), Ministry of Education, Bangladesh (2026)</li>
+              <li>Member, National Young Academy of Bangladesh</li>
+              <li>Member, World Leisure Organization</li>
+            </ul>
+          </div>
+          <div class="prose">
+            <h3 class="sub">University leadership</h3>
+            <ul class="plain">
+              <li>Member Secretary, University Ranking Committee, University of Barishal (2026–)</li>
+              <li>Member Secretary, AICIRM Committee, University of Barishal (2026–)</li>
+              <li>Librarian (additional charge), University of Barishal (2017–2018; 2024)</li>
+              <li>Assistant Proctor, University of Barishal (2016–2018)</li>
+              <li>Chairman, Department of Management Studies, Patuakhali Science and Technology University (2013–2015)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<div class="wrap pager"><a href="teaching.html">← Teaching</a><a href="contact.html">Contact →</a></div>
+</main>
+<footer>
+  <div class="wrap">
+    <span>© 2026 Dr. Md. Shakhawat Hossain · Department of Management Studies, University of Barishal</span>
+    <span>Last updated October 2026</span>
+  </div>
+</footer>
+<script>
+(function () {
+  var input = document.getElementById('pubsearch');
+  if (input) {
+    var count = document.getElementById('pubcount');
+    var empty = document.getElementById('pubempty');
+    var groups = Array.prototype.slice.call(document.querySelectorAll('#publist .yeargroup'));
+    var total = document.querySelectorAll('#publist .pub').length;
+    var run = function () {
+      var q = (input.value || '').trim().toLowerCase(), shown = 0;
+      groups.forEach(function (g) {
+        var n = 0;
+        g.querySelectorAll('.pub').forEach(function (li) {
+          var hit = !q || li.textContent.toLowerCase().indexOf(q) !== -1;
+          li.hidden = !hit; if (hit) n++;
+        });
+        g.hidden = n === 0;
+        var c = g.querySelector('.count'); if (c) c.textContent = n;
+        shown += n;
+      });
+      count.textContent = q ? shown + ' of ' + total + ' shown' : total + ' articles';
+      empty.hidden = shown !== 0;
+    };
+    input.addEventListener('input', run); run();
+  }
+  var cur = document.querySelector('.bar nav a[aria-current]'), nv = document.querySelector('.bar nav');
+  if (cur && nv && nv.scrollWidth > nv.clientWidth) nv.scrollLeft = cur.offsetLeft - (nv.clientWidth - cur.offsetWidth) / 2;
+  var btn = document.getElementById('copybtn');
+  if (btn) btn.addEventListener('click', function () {
+    var el = document.getElementById('email');
+    var selectIt = function () { var r = document.createRange(); r.selectNodeContents(el); var s = window.getSelection(); s.removeAllRanges(); s.addRange(r); btn.textContent = 'Selected'; };
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(el.textContent).then(function () { btn.textContent = 'Copied'; }, selectIt);
+    else selectIt();
+    setTimeout(function () { btn.textContent = 'Copy'; }, 2000);
+  });
+})();
+</script>
+</body>
+</html>

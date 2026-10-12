@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>*,*::before,*::after{box-sizing:border-box}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Talks and awards | Dr. Md. Shakhawat Hossain</title>
+<meta name="description" content="Dr. Md. Shakhawat Hossain, Professor and Chairman, Department of Management Studies, University of Barishal, Bangladesh. Research in sustainable tourism, technology adoption, entrepreneurship and HRM.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="bar">
+  <div class="wrap">
+    <a class="mark" href="index.html">Md. Shakhawat Hossain</a>
+    <nav aria-label="Main"><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="research.html">Research</a></li><li><a href="publications.html">Publications</a></li><li><a href="projects.html">Projects</a></li><li><a href="talks.html" aria-current="page">Talks</a></li><li><a href="teaching.html">Teaching</a></li><li><a href="service.html">Service</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+  </div>
+</header>
+<main>
+<div class="banner"><div class="wrap"><p class="crumb"><a href="index.html">Home</a> / Talks</p><h1>Talks and awards</h1><p>Keynotes, invited talks, conference presentations, awards and scholarships.</p></div></div>
+<section id="talks" class="solo">
+    <div class="wrap">
+      
+      <div class="body">
+        <div>
+          <h3 class="sub">Keynote and invited talks</h3>
+          <ul class="tl">
+            <li><span class="when">May 2026</span><span class="what"><b>Resource Person, &ldquo;Thesis preparation&rdquo;</b><span>Department of Management, Hajee Mohammad Danesh Science and Technology University</span></span></li>
+            <li><span class="when">Jan 2026</span><span class="what"><b>Resource Person, &ldquo;The Thesis Compass: Finding Your Way Through the Thesis Wilderness&rdquo;</b><span>Department of Management Studies, Comilla University</span></span></li>
+            <li><span class="when">Dec 2025</span><span class="what"><b>Resource Person, training for young entrepreneurs</b><span>Bangladesh Small and Cottage Industries Corporation (BSCIC), Barishal</span></span></li>
+            <li><span class="when">Jan 2024</span><span class="what"><b>Keynote Speaker, Entrepreneurship Summit 2024</b><span>Jai Narain Vyas University, Jodhpur, India. &ldquo;Empowering hands, amplifying voices: Women artisans take the digital stage&rdquo;</span></span></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="sub">Conference presentations</h3>
+          <ul class="tl">
+            <li><span class="when">Sep 2025</span><span class="what"><b>Sustainable Business for Society International Conference (SBSIC 2025)</b><span>Sunway University, Malaysia. <span class="award">Best Presenter Award</span></span></span></li>
+            <li><span class="when">Oct 2023</span><span class="what"><b>Philippine Research Conference on Tourism and Hospitality</b><span>University of the Philippines</span></span></li>
+            <li><span class="when">Jul 2022</span><span class="what"><b>International Colloquium on Authentic Scientific Publications</b><span>National Young Academy of Bangladesh, BUET. <span class="award">Second Best Poster Award, Social Sciences</span></span></span></li>
+            <li><span class="when">2017</span><span class="what"><b>4th International Integrative Research Conference</b><span>Bangladesh Academy for Rural Development (BARD), Comilla</span></span></li>
+            <li><span class="when">2015</span><span class="what"><b>International Conference on Business and Social Science Research</b><span>East West University, Dhaka</span></span></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="sub">Scholarships and fellowships</h3>
+          <ul class="tl">
+            <li><span class="when">2019</span><span class="what"><b>UGC PhD Fellowship</b><span>University Grants Commission of Bangladesh</span></span></li>
+            <li><span class="when">2018</span><span class="what"><b>Chinese Government Scholarship</b><span>Shanghai Maritime University</span></span></li>
+            <li><span class="when">2008</span><span class="what"><b>Merit scholarship, MBA (first position)</b><span>University of Rajshahi</span></span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+<div class="wrap pager"><a href="projects.html">← Projects</a><a href="teaching.html">Teaching →</a></div>
+</main>
+<footer>
+  <div class="wrap">
+    <span>© 2026 Dr. Md. Shakhawat Hossain · Department of Management Studies, University of Barishal</span>
+    <span>Last updated October 2026</span>
+  </div>
+</footer>
+<script>
+(function () {
+  var input = document.getElementById('pubsearch');
+  if (input) {
+    var count = document.getElementById('pubcount');
+    var empty = document.getElementById('pubempty');
+    var groups = Array.prototype.slice.call(document.querySelectorAll('#publist .yeargroup'));
+    var total = document.querySelectorAll('#publist .pub').length;
+    var run = function () {
+      var q = (input.value || '').trim().toLowerCase(), shown = 0;
+      groups.forEach(function (g) {
+        var n = 0;
+        g.querySelectorAll('.pub').forEach(function (li) {
+          var hit = !q || li.textContent.toLowerCase().indexOf(q) !== -1;
+          li.hidden = !hit; if (hit) n++;
+        });
+        g.hidden = n === 0;
+        var c = g.querySelector('.count'); if (c) c.textContent = n;
+        shown += n;
+      });
+      count.textContent = q ? shown + ' of ' + total + ' shown' : total + ' articles';
+      empty.hidden = shown !== 0;
+    };
+    input.addEventListener('input', run); run();
+  }
+  var cur = document.querySelector('.bar nav a[aria-current]'), nv = document.querySelector('.bar nav');
+  if (cur && nv && nv.scrollWidth > nv.clientWidth) nv.scrollLeft = cur.offsetLeft - (nv.clientWidth - cur.offsetWidth) / 2;
+  var btn = document.getElementById('copybtn');
+  if (btn) btn.addEventListener('click', function () {
+    var el = document.getElementById('email');
+    var selectIt = function () { var r = document.createRange(); r.selectNodeContents(el); var s = window.getSelection(); s.removeAllRanges(); s.addRange(r); btn.textContent = 'Selected'; };
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(el.textContent).then(function () { btn.textContent = 'Copied'; }, selectIt);
+    else selectIt();
+    setTimeout(function () { btn.textContent = 'Copy'; }, 2000);
+  });
+})();
+</script>
+</body>
+</html>

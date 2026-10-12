@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>*,*::before,*::after{box-sizing:border-box}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Projects | Dr. Md. Shakhawat Hossain</title>
+<meta name="description" content="Dr. Md. Shakhawat Hossain, Professor and Chairman, Department of Management Studies, University of Barishal, Bangladesh. Research in sustainable tourism, technology adoption, entrepreneurship and HRM.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="bar">
+  <div class="wrap">
+    <a class="mark" href="index.html">Md. Shakhawat Hossain</a>
+    <nav aria-label="Main"><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="research.html">Research</a></li><li><a href="publications.html">Publications</a></li><li><a href="projects.html" aria-current="page">Projects</a></li><li><a href="talks.html">Talks</a></li><li><a href="teaching.html">Teaching</a></li><li><a href="service.html">Service</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+  </div>
+</header>
+<main>
+<div class="banner"><div class="wrap"><p class="crumb"><a href="index.html">Home</a> / Projects</p><h1>Projects</h1><p>Funded research and development projects.</p></div></div>
+<section id="projects" class="solo">
+    <div class="wrap">
+      
+      <div class="body">
+        <ul class="tl">
+          <li><span class="when">2025–</span><span class="what"><b>Sub-Project Manager (Team Leader), HEAT Sub-project</b><span>Higher Education Acceleration and Transformation. World Bank and Ministry of Education, Bangladesh</span></span></li>
+          <li><span class="when">2023–2024</span><span class="what"><b>Principal Investigator</b><span>Effects of Value-Belief-Norm theory and ESG factors on domestic tourists&rsquo; public transport use behaviour for tourism sustainability in Bangladesh. University of Barishal / UGC</span></span></li>
+          <li><span class="when">2023–2024</span><span class="what"><b>Co-Principal Investigator</b><span>Sustainability through a prism of gender: Young tourists&rsquo; perspectives on Indigenous tourism in Bangladesh. University Grants Commission of Bangladesh</span></span></li>
+          <li><span class="when">2022–2023</span><span class="what"><b>Principal Investigator</b><span>Pro-environmental behaviour of coastal tourists and local communities in Bangladesh: Converging the Value-Belief-Norm theory and the Theory of Planned Behaviour. University Grants Commission of Bangladesh</span></span></li>
+          <li><span class="when">2012–2014</span><span class="what"><b>Associate Member</b><span>Self-assessment of the Agriculture Faculty for educational quality, Patuakhali Science and Technology University. HEQEP, UGC and the World Bank</span></span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+<div class="wrap pager"><a href="publications.html">← Publications</a><a href="talks.html">Talks →</a></div>
+</main>
+<footer>
+  <div class="wrap">
+    <span>© 2026 Dr. Md. Shakhawat Hossain · Department of Management Studies, University of Barishal</span>
+    <span>Last updated October 2026</span>
+  </div>
+</footer>
+<script>
+(function () {
+  var input = document.getElementById('pubsearch');
+  if (input) {
+    var count = document.getElementById('pubcount');
+    var empty = document.getElementById('pubempty');
+    var groups = Array.prototype.slice.call(document.querySelectorAll('#publist .yeargroup'));
+    var total = document.querySelectorAll('#publist .pub').length;
+    var run = function () {
+      var q = (input.value || '').trim().toLowerCase(), shown = 0;
+      groups.forEach(function (g) {
+        var n = 0;
+        g.querySelectorAll('.pub').forEach(function (li) {
+          var hit = !q || li.textContent.toLowerCase().indexOf(q) !== -1;
+          li.hidden = !hit; if (hit) n++;
+        });
+        g.hidden = n === 0;
+        var c = g.querySelector('.count'); if (c) c.textContent = n;
+        shown += n;
+      });
+      count.textContent = q ? shown + ' of ' + total + ' shown' : total + ' articles';
+      empty.hidden = shown !== 0;
+    };
+    input.addEventListener('input', run); run();
+  }
+  var cur = document.querySelector('.bar nav a[aria-current]'), nv = document.querySelector('.bar nav');
+  if (cur && nv && nv.scrollWidth > nv.clientWidth) nv.scrollLeft = cur.offsetLeft - (nv.clientWidth - cur.offsetWidth) / 2;
+  var btn = document.getElementById('copybtn');
+  if (btn) btn.addEventListener('click', function () {
+    var el = document.getElementById('email');
+    var selectIt = function () { var r = document.createRange(); r.selectNodeContents(el); var s = window.getSelection(); s.removeAllRanges(); s.addRange(r); btn.textContent = 'Selected'; };
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(el.textContent).then(function () { btn.textContent = 'Copied'; }, selectIt);
+    else selectIt();
+    setTimeout(function () { btn.textContent = 'Copy'; }, 2000);
+  });
+})();
+</script>
+</body>
+</html>

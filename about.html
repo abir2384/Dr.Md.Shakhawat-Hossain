@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>*,*::before,*::after{box-sizing:border-box}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>About | Dr. Md. Shakhawat Hossain</title>
+<meta name="description" content="Dr. Md. Shakhawat Hossain, Professor and Chairman, Department of Management Studies, University of Barishal, Bangladesh. Research in sustainable tourism, technology adoption, entrepreneurship and HRM.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="bar">
+  <div class="wrap">
+    <a class="mark" href="index.html">Md. Shakhawat Hossain</a>
+    <nav aria-label="Main"><ul><li><a href="index.html">Home</a></li><li><a href="about.html" aria-current="page">About</a></li><li><a href="research.html">Research</a></li><li><a href="publications.html">Publications</a></li><li><a href="projects.html">Projects</a></li><li><a href="talks.html">Talks</a></li><li><a href="teaching.html">Teaching</a></li><li><a href="service.html">Service</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+  </div>
+</header>
+<main>
+<div class="banner"><div class="wrap"><p class="crumb"><a href="index.html">Home</a> / About</p><h1>About</h1><p>Professor and Chairman, Department of Management Studies, University of Barishal.</p></div></div>
+<section id="about" class="solo">
+    <div class="wrap">
+      
+      <div class="body">
+        <div class="prose">
+          <p>I am a Professor and Chairman of the Department of Management Studies at the University of Barishal, with more than 15 years of university teaching experience. I hold a PhD in Tourism Management from Jagannath University, funded by a University Grants Commission (UGC) fellowship, and completed my PhD coursework at Shanghai Maritime University, China, under a Chinese Government Scholarship. I earned my BBA and MBA (first position) from the University of Rajshahi and completed the Faculty Development Programme at the Indian Institute of Management Ahmedabad.</p>
+          <p>I lead a World Bank&ndash;funded HEAT sub-project at the University of Barishal and serve as Member Secretary of the University Ranking Committee and of the Academia&ndash;Industry Collaboration for Innovation, Research and Market (AICIRM) Committee.</p>
+        </div>
+        <div>
+          <h3 class="sub">Career</h3>
+          <ul class="tl">
+            <li><span class="when">2026–</span><span class="what"><b>Professor</b><span>Department of Management Studies, University of Barishal</span></span></li>
+            <li><span class="when">2025–</span><span class="what"><b>Chairman</b><span>Department of Management Studies, University of Barishal</span></span></li>
+            <li><span class="when">2022–2026</span><span class="what"><b>Associate Professor</b><span>University of Barishal</span></span></li>
+            <li><span class="when">2015–2022</span><span class="what"><b>Assistant Professor</b><span>University of Barishal</span></span></li>
+            <li><span class="when">2011–2015</span><span class="what"><b>Lecturer, then Assistant Professor</b><span>Patuakhali Science and Technology University</span></span></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="sub">Education</h3>
+          <ul class="tl">
+            <li><span class="when">2023</span><span class="what"><b>PhD, Tourism Management</b><span>Jagannath University. Dissertation: Determinants of tourists&rsquo; satisfaction on tourism services in Bangladesh</span></span></li>
+            <li><span class="when">2022</span><span class="what"><b>Faculty Development Programme</b><span>Indian Institute of Management Ahmedabad, India</span></span></li>
+            <li><span class="when">2018–2019</span><span class="what"><b>PhD coursework</b><span>School of Economics &amp; Management, Shanghai Maritime University, China</span></span></li>
+            <li><span class="when">2008</span><span class="what"><b>MBA, Management (first position)</b><span>University of Rajshahi</span></span></li>
+            <li><span class="when">2007</span><span class="what"><b>BBA, Management</b><span>University of Rajshahi</span></span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+<div class="wrap pager"><a href="index.html">← Home</a><a href="research.html">Research →</a></div>
+</main>
+<footer>
+  <div class="wrap">
+    <span>© 2026 Dr. Md. Shakhawat Hossain · Department of Management Studies, University of Barishal</span>
+    <span>Last updated October 2026</span>
+  </div>
+</footer>
+<script>
+(function () {
+  var input = document.getElementById('pubsearch');
+  if (input) {
+    var count = document.getElementById('pubcount');
+    var empty = document.getElementById('pubempty');
+    var groups = Array.prototype.slice.call(document.querySelectorAll('#publist .yeargroup'));
+    var total = document.querySelectorAll('#publist .pub').length;
+    var run = function () {
+      var q = (input.value || '').trim().toLowerCase(), shown = 0;
+      groups.forEach(function (g) {
+        var n = 0;
+        g.querySelectorAll('.pub').forEach(function (li) {
+          var hit = !q || li.textContent.toLowerCase().indexOf(q) !== -1;
+          li.hidden = !hit; if (hit) n++;
+        });
+        g.hidden = n === 0;
+        var c = g.querySelector('.count'); if (c) c.textContent = n;
+        shown += n;
+      });
+      count.textContent = q ? shown + ' of ' + total + ' shown' : total + ' articles';
+      empty.hidden = shown !== 0;
+    };
+    input.addEventListener('input', run); run();
+  }
+  var cur = document.querySelector('.bar nav a[aria-current]'), nv = document.querySelector('.bar nav');
+  if (cur && nv && nv.scrollWidth > nv.clientWidth) nv.scrollLeft = cur.offsetLeft - (nv.clientWidth - cur.offsetWidth) / 2;
+  var btn = document.getElementById('copybtn');
+  if (btn) btn.addEventListener('click', function () {
+    var el = document.getElementById('email');
+    var selectIt = function () { var r = document.createRange(); r.selectNodeContents(el); var s = window.getSelection(); s.removeAllRanges(); s.addRange(r); btn.textContent = 'Selected'; };
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(el.textContent).then(function () { btn.textContent = 'Copied'; }, selectIt);
+    else selectIt();
+    setTimeout(function () { btn.textContent = 'Copy'; }, 2000);
+  });
+})();
+</script>
+</body>
+</html>

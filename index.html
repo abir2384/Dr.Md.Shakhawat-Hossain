@@ -3,247 +3,26 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Dr. Md. Shakhawat Hossain, Professor and Chairman, Department of Management Studies, University of Barishal, Bangladesh. Research in sustainable tourism, technology adoption, entrepreneurship and HRM.">
 <style>*,*::before,*::after{box-sizing:border-box}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <title>Dr. Md. Shakhawat Hossain</title>
+<meta name="description" content="Dr. Md. Shakhawat Hossain, Professor and Chairman, Department of Management Studies, University of Barishal, Bangladesh. Research in sustainable tourism, technology adoption, entrepreneurship and HRM.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
-<style>
-/* Layout: full-bleed sea-teal hero band, then label + content columns per section; alternating tinted bands; collapses to one column on phones. */
-:root {
-  --bg: #F6F9FA;
-  --tint: #EAF3F4;
-  --surface: #FFFFFF;
-  --ink: #0F2A33;
-  --muted: #4B6570;
-  --line: #D6E3E7;
-  --sea: #0B6474;        /* Bay of Bengal teal */
-  --coral: #E0552D;      /* sunset over Kuakata */
-  --gold: #D9921C;       /* jute gold */
-  --leaf: #23855A;       /* Sundarbans mangrove */
-  --sky: #2D6BCB;
-  --sea-soft: #DCEFF2; --coral-soft: #FCE6DE; --gold-soft: #FBEFD6; --leaf-soft: #DDF1E6; --sky-soft: #E1EAFA;
-  --hero-a: #07434F; --hero-b: #0C6E7E; --hero-ink: #FFFFFF; --hero-muted: #BFE3E8;
-  --f-display: "Libre Caslon Text", "Iowan Old Style", Georgia, serif;
-  --f-body: "Public Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
-  --f-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Consolas, monospace;
-  --step-1: 1.2rem;
-  --step-2: 1.6rem;
-  --step-3: clamp(2rem, 1.3rem + 2.6vw, 3rem);
-}
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #0A161A; --tint: #0F2026; --surface: #13262D; --ink: #E5EFF1; --muted: #9BB2B9; --line: #223B44;
-    --sea: #4DBACB; --coral: #FF7D57; --gold: #F0B550; --leaf: #5BC78D; --sky: #7FA9F3;
-    --sea-soft: #133640; --coral-soft: #3A1F17; --gold-soft: #35290F; --leaf-soft: #13301F; --sky-soft: #172843;
-    --hero-a: #052C34; --hero-b: #0A5361; --hero-ink: #FFFFFF; --hero-muted: #A9D6DD; color-scheme: dark;
-  }
-}
-:root[data-theme="dark"] {
-  --bg: #0A161A; --tint: #0F2026; --surface: #13262D; --ink: #E5EFF1; --muted: #9BB2B9; --line: #223B44;
-  --sea: #4DBACB; --coral: #FF7D57; --gold: #F0B550; --leaf: #5BC78D; --sky: #7FA9F3;
-  --sea-soft: #133640; --coral-soft: #3A1F17; --gold-soft: #35290F; --leaf-soft: #13301F; --sky-soft: #172843;
-  --hero-a: #052C34; --hero-b: #0A5361; --hero-ink: #FFFFFF; --hero-muted: #A9D6DD; color-scheme: dark;
-}
-
-html { scroll-behavior: smooth; scroll-padding-top: 72px; }
-@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { animation: none !important; transition: none !important; } }
-body { background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
-a { color: var(--sea); text-decoration-thickness: 1px; text-underline-offset: 3px; }
-a:hover { color: var(--coral); }
-:focus-visible { outline: 2px solid var(--coral); outline-offset: 3px; border-radius: 2px; }
-h1, h2, h3 { font-family: var(--f-display); font-weight: 400; text-wrap: balance; margin: 0; line-height: 1.2; }
-p { margin: 0; }
-ul, ol { margin: 0; padding: 0; }
-.wrap { max-width: 1120px; margin-inline: auto; padding-inline: clamp(16px, 4vw, 40px); }
-
-/* Top bar */
-.bar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 10; background: var(--hero-a); border-bottom: 3px solid var(--coral); }
-.bar .wrap { display: flex; align-items: center; gap: 24px; min-height: 56px; }
-.bar .mark { font-family: var(--f-display); font-size: 1.05rem; color: var(--hero-ink); text-decoration: none; white-space: nowrap; }
-.bar nav { min-width: 0; overflow-x: auto; scrollbar-width: none; margin-left: auto; }
-.bar nav::-webkit-scrollbar { display: none; }
-.bar nav ul { list-style: none; display: flex; gap: 4px; }
-.bar nav a { color: var(--hero-muted); text-decoration: none; font-size: .9rem; white-space: nowrap; padding: 6px 10px; border-radius: 999px; display: inline-block; }
-.bar nav a:hover { color: var(--hero-a); background: var(--gold); }
-@media (max-width: 760px) {
-  .bar .wrap { flex-direction: column; align-items: stretch; gap: 4px; padding-block: 10px 8px; }
-  .bar nav { margin-left: -10px; }
-}
-
-/* Hero band */
-.hero {
-  position: relative; overflow: hidden; color: var(--hero-ink);
-  background:
-    radial-gradient(60% 80% at 100% 0%, rgba(233,162,59,.28), transparent 60%),
-    radial-gradient(50% 70% at 0% 100%, rgba(224,85,45,.22), transparent 60%),
-    linear-gradient(135deg, var(--hero-a), var(--hero-b));
-  padding-block: clamp(40px, 6vw, 80px) clamp(64px, 8vw, 100px);
-}
-.hero::after { /* delta waves */
-  content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 70px; pointer-events: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='70' viewBox='0 0 240 70'%3E%3Cpath d='M0 30 C40 10 80 10 120 30 S200 50 240 30' fill='none' stroke='%23ffffff' stroke-opacity='.14' stroke-width='2'/%3E%3Cpath d='M0 48 C40 28 80 28 120 48 S200 68 240 48' fill='none' stroke='%23ffffff' stroke-opacity='.09' stroke-width='2'/%3E%3C/svg%3E");
-  background-repeat: repeat-x; background-position: bottom;
-}
-.hero .wrap { position: relative; z-index: 1; display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: clamp(24px, 4vw, 60px); align-items: start; }
-.portrait { width: 240px; height: auto; max-width: 100%; aspect-ratio: 341 / 512; object-fit: cover; border-radius: 8px; display: block;
-  border: 4px solid #ffffff; box-shadow: 14px 14px 0 var(--gold); }
-.coords { font-family: var(--f-mono); font-size: .72rem; letter-spacing: .08em; color: var(--hero-muted); margin-top: 22px; }
-.eyebrow { display: inline-block; font-family: var(--f-mono); font-size: .74rem; letter-spacing: .12em; text-transform: uppercase;
-  color: #3A2405; background: var(--gold); padding: 4px 10px; border-radius: 3px; }
-.hero h1 { font-size: var(--step-3); margin-top: 16px; color: var(--hero-ink); }
-.role { font-size: var(--step-1); margin-top: 12px; color: var(--hero-ink); }
-.role span { color: var(--hero-muted); display: block; font-size: 1rem; margin-top: 2px; }
-.lede { margin-top: 20px; max-width: 62ch; color: #E8F5F7; }
-.metrics { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-top: 28px; }
-.metric { background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.16); border-top: 4px solid var(--gold); border-radius: 6px; padding: 12px 14px; }
-.metric:nth-child(1) { border-top-color: #FF8A5F; }
-.metric:nth-child(2) { border-top-color: #F3B54A; }
-.metric:nth-child(3) { border-top-color: #6FD49C; }
-.metric:nth-child(4) { border-top-color: #8DB6FF; }
-.metric b { display: block; font-family: var(--f-display); font-weight: 400; font-size: var(--step-2); font-variant-numeric: tabular-nums; line-height: 1.1; color: #ffffff; }
-.metric small { font-family: var(--f-mono); font-size: .68rem; letter-spacing: .08em; text-transform: uppercase; color: var(--hero-muted); }
-.metrics-note { font-size: .78rem; color: var(--hero-muted); margin-top: 10px; }
-.profiles { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; list-style: none; }
-.profiles a { display: inline-block; font-size: .85rem; font-weight: 500; text-decoration: none; color: var(--hero-a);
-  background: #ffffff; padding: 7px 14px; border-radius: 999px; transition: background .15s, transform .15s; }
-.profiles a:hover { background: var(--gold); color: #2A1A03; transform: translateY(-1px); }
-@media (max-width: 760px) {
-  .hero .wrap { grid-template-columns: 1fr; }
-  .portrait { width: 160px; box-shadow: 10px 10px 0 var(--gold); }
-  .metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-}
-
-/* Sections */
-section { padding-block: clamp(40px, 5vw, 64px); }
-section:nth-of-type(even) { background: var(--tint); }
-section > .wrap { display: grid; grid-template-columns: 210px minmax(0, 1fr); gap: clamp(20px, 4vw, 56px); }
-section h2 { font-size: var(--step-2); color: var(--ink); }
-section h2::after { content: ""; display: block; width: 44px; height: 4px; border-radius: 2px; margin-top: 12px; background: var(--coral); }
-#research h2::after { background: var(--leaf); }
-#publications h2::after { background: var(--sea); }
-#projects h2::after { background: var(--gold); }
-#talks h2::after { background: var(--coral); }
-#teaching h2::after { background: var(--sky); }
-#service h2::after { background: var(--leaf); }
-#contact h2::after { background: var(--gold); }
-.sec-note { font-size: .86rem; color: var(--muted); margin-top: 12px; max-width: 24ch; }
-.body { display: grid; gap: 30px; min-width: 0; }
-.body > p, .prose p { max-width: 66ch; }
-.prose { display: grid; gap: 14px; }
-h3.sub { font-family: var(--f-mono); font-size: .74rem; letter-spacing: .1em; text-transform: uppercase; color: var(--sea); font-weight: 500; }
-@media (max-width: 760px) { section > .wrap { grid-template-columns: 1fr; } .sec-note { max-width: none; } }
-
-/* Research themes */
-.themes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
-.theme { --c: var(--sea); --cs: var(--sea-soft); background: var(--surface); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; display: grid; align-content: start; }
-.theme:nth-child(1) { --c: var(--leaf); --cs: var(--leaf-soft); }
-.theme:nth-child(2) { --c: var(--sky); --cs: var(--sky-soft); }
-.theme:nth-child(3) { --c: var(--coral); --cs: var(--coral-soft); }
-.theme h3 { font-size: 1.08rem; background: var(--cs); color: var(--ink); padding: 16px 18px; border-bottom: 3px solid var(--c); }
-.theme ul { list-style: none; display: grid; gap: 7px; font-size: .93rem; color: var(--muted); padding: 16px 18px 18px; }
-.theme li { padding-left: 16px; position: relative; }
-.theme li::before { content: ""; position: absolute; left: 0; top: .6em; width: 7px; height: 7px; border-radius: 50%; background: var(--c); }
-@media (max-width: 860px) { .themes { grid-template-columns: 1fr; } }
-
-/* Timelines */
-.tl { list-style: none; display: grid; }
-.tl li { display: grid; grid-template-columns: 116px minmax(0, 1fr); gap: 16px; padding-block: 12px; border-bottom: 1px solid var(--line); }
-.tl li:last-child { border-bottom: 0; }
-.tl .when { font-family: var(--f-mono); font-size: .78rem; color: var(--sea); font-weight: 500; font-variant-numeric: tabular-nums; padding-top: 3px; }
-.tl .what b { font-weight: 600; }
-.tl .what span { display: block; color: var(--muted); font-size: .92rem; }
-.award { display: inline-block !important; color: var(--coral); font-weight: 600; }
-.award::before { content: "★ "; color: var(--gold); }
-@media (max-width: 480px) { .tl li { grid-template-columns: 1fr; gap: 2px; } }
-
-/* Publications */
-.pubtools { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
-.pubtools input { flex: 1 1 260px; min-width: 0; font: inherit; font-size: .95rem; color: var(--ink);
-  background: var(--surface); border: 2px solid var(--line); border-radius: 999px; padding: 9px 16px; }
-.pubtools input:focus { outline: none; border-color: var(--sea); }
-.pubtools .hint { font-size: .82rem; color: var(--muted); }
-.yeargroup { --c: var(--sea); display: grid; gap: 6px; }
-.yeargroup:nth-child(5n+1) { --c: var(--coral); }
-.yeargroup:nth-child(5n+2) { --c: var(--sea); }
-.yeargroup:nth-child(5n+3) { --c: var(--leaf); }
-.yeargroup:nth-child(5n+4) { --c: var(--gold); }
-.yeargroup:nth-child(5n+5) { --c: var(--sky); }
-.year { font-family: var(--f-display); font-size: 1.2rem; display: flex; align-items: center; gap: 10px; }
-.year::before { content: ""; width: 12px; height: 12px; border-radius: 3px; background: var(--c); }
-.year .count { font-family: var(--f-mono); font-size: .7rem; color: var(--muted); background: var(--surface); border: 1px solid var(--line); border-radius: 999px; padding: 1px 8px; }
-.pubs { list-style: none; display: grid; gap: 10px; }
-.pub { background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--c, var(--sea)); border-radius: 6px; padding: 14px 16px; display: grid; gap: 8px; }
-.cite { max-width: 76ch; }
-.cite b { font-weight: 600; color: var(--sea); }
-.meta { display: flex; flex-wrap: wrap; gap: 6px 8px; align-items: center; }
-.doi { font-family: var(--f-mono); font-size: .76rem; overflow-wrap: anywhere; margin-right: 4px; }
-.chip { font-family: var(--f-mono); font-size: .68rem; font-weight: 500; letter-spacing: .03em; padding: 2px 8px; border-radius: 999px; white-space: nowrap; color: var(--sea); background: var(--sea-soft); }
-.chip.scopus { color: var(--coral); background: var(--coral-soft); }
-.chip.wos { color: var(--sky); background: var(--sky-soft); }
-.chip.abdc { color: var(--leaf); background: var(--leaf-soft); }
-.chip.era { color: var(--gold); background: var(--gold-soft); }
-.legend { display: flex; flex-wrap: wrap; gap: 6px; }
-.empty { color: var(--muted); font-size: .92rem; }
-
-/* Lists and figures */
-.cols { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 40px; }
-@media (max-width: 760px) { .cols { grid-template-columns: 1fr; } }
-.plain { list-style: none; display: grid; gap: 8px; }
-.plain li { padding-left: 16px; position: relative; }
-.plain li::before { content: ""; position: absolute; left: 0; top: .6em; width: 7px; height: 7px; border-radius: 50%; background: var(--sea); }
-.figure { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
-.figure div { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; border-top: 4px solid var(--sky); }
-.figure div:nth-child(2) { border-top-color: var(--coral); }
-.figure div:nth-child(3) { border-top-color: var(--gold); }
-.figure div b { display: block; font-family: var(--f-display); font-weight: 400; font-size: var(--step-2); line-height: 1.1; font-variant-numeric: tabular-nums; }
-.figure div small { color: var(--muted); font-size: .85rem; }
-
-.reviews { list-style: none; columns: 2; column-gap: 40px; font-size: .92rem; }
-.reviews li { break-inside: avoid; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-block: 6px; border-bottom: 1px dotted var(--line); }
-.reviews li span:last-child { font-family: var(--f-mono); font-size: .74rem; font-weight: 500; color: var(--leaf); background: var(--leaf-soft); border-radius: 999px; padding: 1px 8px; font-variant-numeric: tabular-nums; }
-@media (max-width: 640px) { .reviews { columns: 1; } }
-
-/* Contact */
-.contact-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
-.contact-grid > div { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 18px; }
-@media (max-width: 640px) { .contact-grid { grid-template-columns: 1fr; } }
-.email-row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
-.email { font-family: var(--f-mono); font-size: .95rem; user-select: all; overflow-wrap: anywhere; }
-button.copy { font: inherit; font-size: .8rem; font-weight: 500; cursor: pointer; color: #ffffff; background: var(--coral); border: 0; border-radius: 999px; padding: 5px 14px; }
-button.copy:hover { filter: brightness(1.08); }
-
-footer { background: var(--hero-a); color: var(--hero-muted); padding-block: 28px 40px; font-size: .82rem; border-top: 3px solid var(--gold); }
-footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; }
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-
 <header class="bar">
   <div class="wrap">
-    <a class="mark" href="#top">Md. Shakhawat Hossain</a>
-    <nav aria-label="Sections">
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#research">Research</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#talks">Talks</a></li>
-        <li><a href="#teaching">Teaching</a></li>
-        <li><a href="#service">Service</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <a class="mark" href="index.html">Md. Shakhawat Hossain</a>
+    <nav aria-label="Main"><ul><li><a href="index.html" aria-current="page">Home</a></li><li><a href="about.html">About</a></li><li><a href="research.html">Research</a></li><li><a href="publications.html">Publications</a></li><li><a href="projects.html">Projects</a></li><li><a href="talks.html">Talks</a></li><li><a href="teaching.html">Teaching</a></li><li><a href="service.html">Service</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
   </div>
 </header>
-
-<main id="top">
-  <div class="hero">
+<main>
+<div class="hero">
     <div class="wrap">
       <div>
-        <img class="portrait" src="data:image/jpeg;base64,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" alt="Portrait of Dr. Md. Shakhawat Hossain" width="220" height="330">
+        <img class="portrait" src="photo.jpg" alt="Portrait of Dr. Md. Shakhawat Hossain" width="220" height="330">
         <p class="coords">BARISHAL · 22.70°N 90.37°E</p>
       </div>
       <div>
@@ -269,43 +48,24 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
     </div>
   </div>
 
-  <section id="about">
+  <section id="welcome">
     <div class="wrap">
-      <div><h2>About</h2></div>
+      <div><h2>Welcome</h2></div>
       <div class="body">
-        <div class="prose">
-          <p>I am a Professor and Chairman of the Department of Management Studies at the University of Barishal, with more than 15 years of university teaching experience. I hold a PhD in Tourism Management from Jagannath University, funded by a University Grants Commission (UGC) fellowship, and completed my PhD coursework at Shanghai Maritime University, China, under a Chinese Government Scholarship. I earned my BBA and MBA (first position) from the University of Rajshahi and completed the Faculty Development Programme at the Indian Institute of Management Ahmedabad.</p>
-          <p>I lead a World Bank&ndash;funded HEAT sub-project at the University of Barishal and serve as Member Secretary of the University Ranking Committee and of the Academia&ndash;Industry Collaboration for Innovation, Research and Market (AICIRM) Committee.</p>
-        </div>
-        <div>
-          <h3 class="sub">Career</h3>
-          <ul class="tl">
-            <li><span class="when">2026–</span><span class="what"><b>Professor</b><span>Department of Management Studies, University of Barishal</span></span></li>
-            <li><span class="when">2025–</span><span class="what"><b>Chairman</b><span>Department of Management Studies, University of Barishal</span></span></li>
-            <li><span class="when">2022–2026</span><span class="what"><b>Associate Professor</b><span>University of Barishal</span></span></li>
-            <li><span class="when">2015–2022</span><span class="what"><b>Assistant Professor</b><span>University of Barishal</span></span></li>
-            <li><span class="when">2011–2015</span><span class="what"><b>Lecturer, then Assistant Professor</b><span>Patuakhali Science and Technology University</span></span></li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="sub">Education</h3>
-          <ul class="tl">
-            <li><span class="when">2023</span><span class="what"><b>PhD, Tourism Management</b><span>Jagannath University. Dissertation: Determinants of tourists&rsquo; satisfaction on tourism services in Bangladesh</span></span></li>
-            <li><span class="when">2022</span><span class="what"><b>Faculty Development Programme</b><span>Indian Institute of Management Ahmedabad, India</span></span></li>
-            <li><span class="when">2018–2019</span><span class="what"><b>PhD coursework</b><span>School of Economics &amp; Management, Shanghai Maritime University, China</span></span></li>
-            <li><span class="when">2008</span><span class="what"><b>MBA, Management (first position)</b><span>University of Rajshahi</span></span></li>
-            <li><span class="when">2007</span><span class="what"><b>BBA, Management</b><span>University of Rajshahi</span></span></li>
-          </ul>
-        </div>
+        <div class="prose"><p>I am a Professor and Chairman of the Department of Management Studies at the University of Barishal, with more than 15 years of university teaching experience. I hold a PhD in Tourism Management from Jagannath University, funded by a University Grants Commission (UGC) fellowship, and completed my PhD coursework at Shanghai Maritime University, China, under a Chinese Government Scholarship. I earned my BBA and MBA (first position) from the University of Rajshahi and completed the Faculty Development Programme at the Indian Institute of Management Ahmedabad.</p><p><a class="more" href="about.html">Read full biography →</a></p></div>
       </div>
     </div>
   </section>
-
+  <section id="explore">
+    <div class="wrap">
+      <div><h2>Explore</h2><p class="sec-note">Each area has its own page.</p></div>
+      <div class="body"><div class="tiles"><a class="tile" href="about.html"><em>Professor since 2026</em><b>About</b><span>Biography, career and education</span></a><a class="tile" href="publications.html"><em>23 articles · 1 chapter</em><b>Publications</b><span>Searchable list with DOIs and indexing</span></a><a class="tile" href="projects.html"><em>5 projects</em><b>Projects</b><span>World Bank HEAT and UGC-funded research</span></a><a class="tile" href="talks.html"><em>Best Presenter 2025</em><b>Talks and awards</b><span>Keynotes, conferences and awards</span></a><a class="tile" href="teaching.html"><em>PhD and MBA supervision</em><b>Teaching</b><span>Courses and research supervision</span></a><a class="tile" href="service.html"><em>80 verified reviews</em><b>Service</b><span>Peer review, editorial roles and leadership</span></a></div></div>
+    </div>
+  </section>
   <section id="research">
     <div class="wrap">
-      <div><h2>Research</h2><p class="sec-note">Quantitative, theory-driven work, mostly PLS-SEM.</p></div>
-      <div class="body">
-        <div class="themes">
+      <div><h2>Research themes</h2></div>
+      <div class="body"><div class="themes">
           <div class="theme">
             <h3>Sustainable tourism and climate action</h3>
             <ul><li>Sustainable and coastal tourism</li><li>Pro-environmental behaviour</li><li>Carbon emission reduction</li><li>Tourist satisfaction and experience</li></ul>
@@ -324,235 +84,60 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
           <p>My research addresses practical challenges of sustainability, technology and people management in emerging economies, with a focus on Bangladesh. I combine behavioural theories, particularly the Value-Belief-Norm theory and the Theory of Planned Behaviour, with quantitative methods such as PLS-SEM to explain how tourists, employees, entrepreneurs and organisations make decisions, including their adoption of new technologies. The aim is evidence that can inform policy and practice in line with the Sustainable Development Goals.</p>
         </div>
       </div>
+    </div><p><a class="more" href="research.html">Research approach →</a></p></div>
     </div>
   </section>
-
   <section id="publications">
     <div class="wrap">
-      <div><h2>Publications</h2><p class="sec-note">Selected indexed journal articles. <b>*</b> marks the corresponding author.</p><div class="legend" style="margin-top:12px"><span class="chip scopus">Scopus</span><span class="chip wos">Web of Science</span><span class="chip abdc">ABDC</span></div></div>
-      <div class="body">
-        <div class="pubtools">
-          <label for="pubsearch" class="hint" style="flex-basis:100%">Search by title, journal, co-author or keyword</label>
-          <input id="pubsearch" type="search" placeholder="e.g. tourism, AI, Technology in Society">
-          <span class="hint" id="pubcount" aria-live="polite"></span>
-        </div>
-        <div id="publist" style="display:grid;gap:28px"><div class="yeargroup"><h3 class="year">2026<span class="count">4</span></h3><ol class="pubs"><li class="pub"><p class="cite">Islam, R., &amp; <b>Hossain, M. S.*</b> (2026). Green intentions in a growing nation: How trust and responsibility shape eco-hotel choices. <i>Acta Psychologica</i>.</p><p class="meta"><a class="doi" href="https://doi.org/10.1016/j.actpsy.2026.107828" target="_blank" rel="noopener">doi:10.1016/j.actpsy.2026.107828</a><span class="chip scopus">Scopus</span><span class="chip wos">WoS SSCI</span></p></li><li class="pub"><p class="cite">Asma, I. J., &amp; <b>Hossain, M. S.*</b> (2026). Antecedents of customer satisfaction in mobile telephony: The mediating role of relationship quality. <i>SN Business &amp; Economics</i>.</p><p class="meta"><a class="doi" href="https://doi.org/10.1007/s43546-026-01245-y" target="_blank" rel="noopener">doi:10.1007/s43546-026-01245-y</a><span class="chip scopus">Scopus</span></p></li><li class="pub"><p class="cite">Sumon, M., <b>Hossain, M. S.*</b>, &amp; Mondal, S. K. (2026). Innovation at the nexus of strategy, culture, and SME performance: An emerging country perspective. <i>Journal of the International Council for Small Business</i>.</p><p class="meta"><a class="doi" href="https://doi.org/10.1080/26437015.2026.2686414" target="_blank" rel="noopener">doi:10.1080/26437015.2026.2686414</a><span class="chip scopus">Scopus</span><span class="chip wos">WoS ESCI</span></p></li><li class="pub"><p class="cite">Shampa, M. T. J., &amp; <b>Hossain, M. S.*</b> (2026). Analyzing factors influencing smart technology adoption in an emerging economy&rsquo;s tourism and hospitality sector. <i>Telematics and Informatics Reports</i>, 100308<i></i>.</p><p class="meta"><a class="doi" href="https://doi.org/10.1016/j.teler.2026.100308" target="_blank" rel="noopener">doi:10.1016/j.teler.2026.100308</a><span class="chip scopus">Scopus</span><span class="chip wos">WoS ESCI</span></p></li></ol></div><div class="yeargroup"><h3 class="year">2025<span class="count">7</span></h3><ol class="pubs"><li class="pub"><p class="cite">Gazi, M. A. I., Al Masud, A., Amin, M. B., <b>Hossain, M. S.</b>, Ferdous, R., Al-Amin, M., &amp; Senathirajah, A. R. S. (2025). Unveiling the nexus: Exploring the relationship of e-satisfaction, e-trust, and online repurchase intentions among students in a developing country. <i>Humanities and Social Sciences Communications</i>.</p><p class="meta"><a class="doi" href="https://doi.org/10.1057/s41599-025-06326-1" target="_blank" rel="noopener">doi:10.1057/s41599-025-06326-1</a><span class="chip scopus">Scopus</span><span class="chip wos">WoS SSCI</span></p></li><li class="pub"><p class="cite">Hasan, M. M., &amp; <b>Hossain, M. S.*</b> (2025). Leveraging green HRM for environmental sustainability: The mediating role of employee engagement in hospitality. <i>Tourism and Hospitality Management, 32</i>(1)<i></i>.</p><p class="meta"><a class="doi" href="https://doi.org/10.20867/THM.32.1.10" target="_blank" rel="noopener">doi:10.20867/THM.32.1.10</a><span class="chip scopus">Scopus</span><span class="chip wos">WoS ESCI</span></p></li><li class="pub"><p class="cite">Awal, M. R., <b>Hossain, M. S.*</b>, Hossain, M. A., Sangeetha, P., Karki, S., &amp; Mutha, A. (2025). Cultivating entrepreneurial aspirations: A comprehensive examination of university support, family support, and digital entrepreneurial knowledge on students&rsquo; digital entrepreneurial intention. <i>Journal of Global Entrepreneurship Research, 15</i>(1), 3<i></i>.</p><p class="meta"><a class="doi" href="https://doi.org/10.1007/s40497-024-00417-0" target="_blank" rel="noopener">doi:10.1007/s40497-024-00417-0</a><span class="chip scopus">Scopus</span><span class="chip wos">WoS ESCI</span></p></li><li class="pub"><p class="cite">Yeasin, M., Masud, A. A., Hossain, M. A., <b>Hossain, M. S.*</b>, &amp; Hossain, M. A. (2025). Eco-friendly supply chains: Unveiling the keys to sustainable success in the textile industry of an emerging economy. <i>Business Strategy &amp; Development</i>.</p><p class="meta"><a class="doi" href="https://doi.org/10.1002/bsd2.70157" target="_blank" rel="noopener">doi:10.1002/bsd2.70157</a><span class="chip scopus">Scopus</span><span class="chip wos">WoS ESCI</span></p></li><li class="pub"><p class="cite">Amin, R., Hossain, M. A., <b>Hossain, M. S.</b>, &amp; Fang, Y. (2025). Adoption of central bank digital currency: An empirical investigation of trialability efficacy on Digital Yuan. <i>Digital Transformation and Society</i>.</p><p class="meta"><a class="doi" href="https://doi.org/10.1108/DTS-08-2024-0156" target="_blank" rel="noopener">doi:10.1108/DTS-08-2024-0156</a><span class="chip scopus">Scopus</span></p></li><li class="pub"><p class="cite">Saha, P., <b>Hossain, M. S.*</b>, Roy, N. C., Masud, A. A., &amp; Amin, R. (2025). Unlocking the power of AI in education: Students&rsquo; intentions and AI tool use driving learning success in an emerging economy. <i>On the Horizon: The International Journal of Learning Futures</i>.</p><p class="meta"><a class="doi" href="https://doi.org/10.1108/OTH-10-2024-0066" target="_blank" rel="noopener">doi:10.1108/OTH-10-2024-0066</a><span class="chip scopus">Scopus</span><span class="chip wos">WoS ESCI</span></p></li><li class="pub"><p class="cite">Chowdhury, M. S., <b>Hossain, M. S.</b>, Hossain, M. A., &amp; Wu, R. (2025). Self-efficacy and career intention: Uncovering the underlying processes. <i>PLOS ONE, 20</i>(1), e0314802<i></i>.</p><p class="meta"><a class="doi" href="https://doi.org/10.1371/journal.pone.0314802" target="_blank" rel="noopener">doi:10.1371/journal.pone.0314802</a><span class="chip scopus">Scopus</span><span class="chip wos">WoS SCIE</span></p></li></ol></div><div class="yeargroup"><h3 class="year">2024<span class="count">5</span></h3><ol class="pubs"><li class="pub"><p class="cite"><b>Hossain, M. S.</b>, Chowdhury, M. S., Masud, A. A., Refat, N. H., &amp; Wu, R. (2024). An empirical study of visitors&rsquo; motivations and actual behavior in dark tourism sites using structural equation modeling: Bangladesh perspective. <i>Journal of Tourism Management Research, 11</i>(2), 281&ndash;301<i></i>.</p><p class="meta"><a class="doi" href="https://doi.org/10.18488/31.v11i2.3985" target="_blank" rel="noopener">doi:10.18488/31.v11i2.3985</a><span class="chip wos">WoS ESCI</span></p></li><li class="pub"><p class="cite">Gazi, M. A. I., Masud, A. A., Islam, S., Hossain, M. A., <b>Hossain, M. S.</b>, &amp; Senathirajah, A. R. bin S. (2024). The effect of green banking practices on banks&rsquo; sustainability performance and green brand image: An empirical study of an emerging economy. <i>Journal of Sustainability Research, 6</i>(4)<i></i>.</p><p class="meta"><a class="doi" href="https://doi.org/10.20900/jsr20240074" target="_blank" rel="noopener">doi:10.20900/jsr20240074</a><span class="chip scopus">Scopus</span></p></li><li class="pub"><p class="cite">Awal, M. R., <b>Hossain, M. S.</b>, Arzin, T. A., Sheikh, M. I., &amp; Haque, M. E. (2024). Application of the SOBC model to study customers&rsquo; online purchase intentions in an emerging economy during COVID-19: Does gender matter?. <i>PSU Research Review</i>.</p><p class="meta"><a class="doi" href="https://doi.org/10.1108/PRR-02-2022-0014" target="_blank" rel="noopener">doi:10.1108/PRR-02-2022-0014</a><span class="chip scopus">Scopus</span></p></li><li class="pub"><p class="cite">Hossain, M. A., <b>Hossain, M. S.*</b>, Chowdhury, M. S., &amp; Shuvro, R. A. (2024). The power of livestreaming: Will it become an alternative strategy for startups?. <i>Technology in Society</i>, 102640<i></i>.</p><p class="meta"><a class="doi" href="https://doi.org/10.1016/j.techsoc.2024.102640" target="_blank" rel="noopener">doi:10.1016/j.techsoc.2024.102640</a><span class="chip scopus">Scopus</span><span class="chip wos">WoS SSCI</span><span class="chip abdc">ABDC C</span></p></li><li class="pub"><p class="cite"><b>Hossain, M. S.*</b>, Hossain, M. A., Masud, A. A., &amp; Hossain, M. S. (2024). Understanding the effect of millennial tourists&rsquo; accommodation service experiences using structural equation modeling techniques: An emerging economy context. <i>South Asian Journal of Marketing</i>.</p><p class="meta"><a class="doi" href="https://doi.org/10.1108/SAJM-02-2023-0019" target="_blank" rel="noopener">doi:10.1108/SAJM-02-2023-0019</a></p></li></ol></div><div class="yeargroup"><h3 class="year">2023<span class="count">2</span></h3><ol class="pubs"><li class="pub"><p class="cite">Hasan, M. J., Hossain, M. A., <b>Hossain, M. S.</b>, Masud, A. A., Yesmin, M. N., &amp; Wu, R. (2023). Investigating consumers&rsquo; intentions regarding the adoption of mobile payments: An SEM-based empirical investigation. <i>Asian Economic and Financial Review, 13</i>(9), 662&ndash;676<i></i>.</p><p class="meta"><a class="doi" href="https://doi.org/10.55493/5002.v13i9.4846" target="_blank" rel="noopener">doi:10.55493/5002.v13i9.4846</a><span class="chip scopus">Scopus</span></p></li><li class="pub"><p class="cite"><b>Hossain, M. S.</b>, Hossain, M. A., Al Masud, A., Islam, K. M. Z., Mostafa, M. G., &amp; Hossain, M. T. (2023). The integrated power of gastronomic experience quality and accommodation experience to build tourists&rsquo; satisfaction, revisit intention, and word-of-mouth intention. <i>Journal of Quality Assurance in Hospitality &amp; Tourism</i>.</p><p class="meta"><a class="doi" href="https://doi.org/10.1080/1528008X.2023.2173710" target="_blank" rel="noopener">doi:10.1080/1528008X.2023.2173710</a><span class="chip scopus">Scopus</span><span class="chip wos">WoS ESCI</span><span class="chip abdc">ABDC B</span></p></li></ol></div><div class="yeargroup"><h3 class="year">2018&ndash;2022<span class="count">5</span></h3><ol class="pubs"><li class="pub"><p class="cite">Hossain, M. A., Kalam, A., <b>Hossain, M. S.</b>, Sarmin, M. N., &amp; Nuruzzaman, M. (2022). An integrated model of destination advocacy and its direct and mediating effects on destination revisit intention. <i>Business, Management and Economics Engineering, 20</i>(2), 286&ndash;311<i></i>.</p><p class="meta"><a class="doi" href="https://doi.org/10.3846/bmee.2022.16754" target="_blank" rel="noopener">doi:10.3846/bmee.2022.16754</a><span class="chip scopus">Scopus</span><span class="chip wos">WoS ESCI</span></p></li><li class="pub"><p class="cite">Masud, A. A., Hossain, M. A., Roy, D. K., <b>Hossain, M. S.</b>, Nabi, M. N., Ferdous, A., &amp; Hossain, M. T. (2021). Global pandemic situation, responses and measures in Bangladesh: New normal and sustainability perspective. <i>International Journal of Asian Social Science, 11</i>(7), 314&ndash;332<i></i>.</p><p class="meta"><a class="doi" href="https://doi.org/10.18488/journal.1.2021.117.314.332" target="_blank" rel="noopener">doi:10.18488/journal.1.2021.117.314.332</a><span class="chip era">ERA</span></p></li><li class="pub"><p class="cite"><b>Hossain, M. S.*</b>, Mostafa, M. G., &amp; Hossain, M. A. (2021). Modeling tourists&rsquo; satisfaction in the nature-based tourist destination using structural equation modeling technique. <i>GeoJournal of Tourism and Geosites, 37</i>(3), 814&ndash;822<i></i>.</p><p class="meta"><a class="doi" href="https://doi.org/10.30892/gtg.37311-713" target="_blank" rel="noopener">doi:10.30892/gtg.37311-713</a><span class="chip scopus">Scopus</span></p></li><li class="pub"><p class="cite">Hossain, M. A., Jahan, N., Fang, Y., Hoque, S., &amp; <b>Hossain, M. S.</b> (2019). Nexus of electronic word-of-mouth to social networking sites: A sustainable chatter of new digital social media. <i>Sustainability, 11</i>(3), 759<i></i>.</p><p class="meta"><a class="doi" href="https://doi.org/10.3390/su11030759" target="_blank" rel="noopener">doi:10.3390/su11030759</a><span class="chip scopus">Scopus</span><span class="chip wos">WoS SCIE/SSCI</span></p></li><li class="pub"><p class="cite">Hossain, M. A., <b>Hossain, M. S.</b>, &amp; Jahan, N. (2018). Predicting continuance usage intention of mobile payment: An experimental study of Bangladeshi customers. <i>Asian Economic and Financial Review, 8</i>(4), 487&ndash;498<i></i>.</p><p class="meta"><a class="doi" href="https://doi.org/10.18488/journal.aefr.2018.84.487.498" target="_blank" rel="noopener">doi:10.18488/journal.aefr.2018.84.487.498</a><span class="chip scopus">Scopus</span></p></li></ol></div></div>
-        <p class="empty" id="pubempty" hidden>No publications match that search.</p>
-        <div>
-          <h3 class="sub">Book chapter</h3>
-          <ul class="pubs"><li class="pub"><p class="cite">Banerjee, P., Roy, N. C., Ghosh, D., &amp; <b>Hossain, M. S.</b> (2024). Rural tourism as a driving force for women empowerment: Evidence from South Asian perspective. In <i>Rural and Heritage Tourism in Southeast and South Asia: Practical Insights and Perspectives</i>. CRC Press, Taylor &amp; Francis.</p><p class="meta"><a class="doi" href="https://doi.org/10.1201/9781779640673-12" target="_blank" rel="noopener">doi:10.1201/9781779640673-12</a></p></li></ul>
-        </div>
-      </div>
+      <div><h2>Recent publications</h2><p class="sec-note"><b>*</b> marks the corresponding author.</p></div>
+      <div class="body"><div class="yeargroup"><h3 class="year">2026<span class="count">4</span></h3><ol class="pubs"><li class="pub"><p class="cite">Islam, R., &amp; <b>Hossain, M. S.*</b> (2026). Green intentions in a growing nation: How trust and responsibility shape eco-hotel choices. <i>Acta Psychologica</i>.</p><p class="meta"><a class="doi" href="https://doi.org/10.1016/j.actpsy.2026.107828" target="_blank" rel="noopener">doi:10.1016/j.actpsy.2026.107828</a><span class="chip scopus">Scopus</span><span class="chip wos">WoS SSCI</span></p></li><li class="pub"><p class="cite">Asma, I. J., &amp; <b>Hossain, M. S.*</b> (2026). Antecedents of customer satisfaction in mobile telephony: The mediating role of relationship quality. <i>SN Business &amp; Economics</i>.</p><p class="meta"><a class="doi" href="https://doi.org/10.1007/s43546-026-01245-y" target="_blank" rel="noopener">doi:10.1007/s43546-026-01245-y</a><span class="chip scopus">Scopus</span></p></li><li class="pub"><p class="cite">Sumon, M., <b>Hossain, M. S.*</b>, &amp; Mondal, S. K. (2026). Innovation at the nexus of strategy, culture, and SME performance: An emerging country perspective. <i>Journal of the International Council for Small Business</i>.</p><p class="meta"><a class="doi" href="https://doi.org/10.1080/26437015.2026.2686414" target="_blank" rel="noopener">doi:10.1080/26437015.2026.2686414</a><span class="chip scopus">Scopus</span><span class="chip wos">WoS ESCI</span></p></li><li class="pub"><p class="cite">Shampa, M. T. J., &amp; <b>Hossain, M. S.*</b> (2026). Analyzing factors influencing smart technology adoption in an emerging economy&rsquo;s tourism and hospitality sector. <i>Telematics and Informatics Reports</i>, 100308<i></i>.</p><p class="meta"><a class="doi" href="https://doi.org/10.1016/j.teler.2026.100308" target="_blank" rel="noopener">doi:10.1016/j.teler.2026.100308</a><span class="chip scopus">Scopus</span><span class="chip wos">WoS ESCI</span></p></li></ol></div><p><a class="more" href="publications.html">View all publications →</a></p></div>
     </div>
   </section>
 
-  <section id="projects">
-    <div class="wrap">
-      <div><h2>Projects</h2><p class="sec-note">Funded research and development projects.</p></div>
-      <div class="body">
-        <ul class="tl">
-          <li><span class="when">2025–</span><span class="what"><b>Sub-Project Manager (Team Leader), HEAT Sub-project</b><span>Higher Education Acceleration and Transformation. World Bank and Ministry of Education, Bangladesh</span></span></li>
-          <li><span class="when">2023–2024</span><span class="what"><b>Principal Investigator</b><span>Effects of Value-Belief-Norm theory and ESG factors on domestic tourists&rsquo; public transport use behaviour for tourism sustainability in Bangladesh. University of Barishal / UGC</span></span></li>
-          <li><span class="when">2023–2024</span><span class="what"><b>Co-Principal Investigator</b><span>Sustainability through a prism of gender: Young tourists&rsquo; perspectives on Indigenous tourism in Bangladesh. University Grants Commission of Bangladesh</span></span></li>
-          <li><span class="when">2022–2023</span><span class="what"><b>Principal Investigator</b><span>Pro-environmental behaviour of coastal tourists and local communities in Bangladesh: Converging the Value-Belief-Norm theory and the Theory of Planned Behaviour. University Grants Commission of Bangladesh</span></span></li>
-          <li><span class="when">2012–2014</span><span class="what"><b>Associate Member</b><span>Self-assessment of the Agriculture Faculty for educational quality, Patuakhali Science and Technology University. HEQEP, UGC and the World Bank</span></span></li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section id="talks">
-    <div class="wrap">
-      <div><h2>Talks and awards</h2></div>
-      <div class="body">
-        <div>
-          <h3 class="sub">Keynote and invited talks</h3>
-          <ul class="tl">
-            <li><span class="when">May 2026</span><span class="what"><b>Resource Person, &ldquo;Thesis preparation&rdquo;</b><span>Department of Management, Hajee Mohammad Danesh Science and Technology University</span></span></li>
-            <li><span class="when">Jan 2026</span><span class="what"><b>Resource Person, &ldquo;The Thesis Compass: Finding Your Way Through the Thesis Wilderness&rdquo;</b><span>Department of Management Studies, Comilla University</span></span></li>
-            <li><span class="when">Dec 2025</span><span class="what"><b>Resource Person, training for young entrepreneurs</b><span>Bangladesh Small and Cottage Industries Corporation (BSCIC), Barishal</span></span></li>
-            <li><span class="when">Jan 2024</span><span class="what"><b>Keynote Speaker, Entrepreneurship Summit 2024</b><span>Jai Narain Vyas University, Jodhpur, India. &ldquo;Empowering hands, amplifying voices: Women artisans take the digital stage&rdquo;</span></span></li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="sub">Conference presentations</h3>
-          <ul class="tl">
-            <li><span class="when">Sep 2025</span><span class="what"><b>Sustainable Business for Society International Conference (SBSIC 2025)</b><span>Sunway University, Malaysia. <span class="award">Best Presenter Award</span></span></span></li>
-            <li><span class="when">Oct 2023</span><span class="what"><b>Philippine Research Conference on Tourism and Hospitality</b><span>University of the Philippines</span></span></li>
-            <li><span class="when">Jul 2022</span><span class="what"><b>International Colloquium on Authentic Scientific Publications</b><span>National Young Academy of Bangladesh, BUET. <span class="award">Second Best Poster Award, Social Sciences</span></span></span></li>
-            <li><span class="when">2017</span><span class="what"><b>4th International Integrative Research Conference</b><span>Bangladesh Academy for Rural Development (BARD), Comilla</span></span></li>
-            <li><span class="when">2015</span><span class="what"><b>International Conference on Business and Social Science Research</b><span>East West University, Dhaka</span></span></li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="sub">Scholarships and fellowships</h3>
-          <ul class="tl">
-            <li><span class="when">2019</span><span class="what"><b>UGC PhD Fellowship</b><span>University Grants Commission of Bangladesh</span></span></li>
-            <li><span class="when">2018</span><span class="what"><b>Chinese Government Scholarship</b><span>Shanghai Maritime University</span></span></li>
-            <li><span class="when">2008</span><span class="what"><b>Merit scholarship, MBA (first position)</b><span>University of Rajshahi</span></span></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="teaching">
-    <div class="wrap">
-      <div><h2>Teaching and supervision</h2></div>
-      <div class="body">
-        <div class="figure">
-          <div><b>1</b><small>PhD student (co-supervisor)</small></div>
-          <div><b>4</b><small>MBA theses</small></div>
-          <div><b>28</b><small>MBA research papers</small></div>
-        </div>
-        <div class="cols">
-          <div class="prose">
-            <h3 class="sub">University of Barishal</h3>
-            <ul class="plain">
-              <li><b>MBA and EMBA:</b> Organization Strategy and Leadership; HRM in the Tourism and Hospitality Industry; Employee Motivation and Leadership; SMEs and Entrepreneurship Development</li>
-              <li><b>BBA:</b> Entrepreneurship Development; Strategic Management; Operations Management; Marketing Management; Management Information Systems; Computer Applications in Business; Industrial Sociology</li>
-            </ul>
-          </div>
-          <div class="prose">
-            <h3 class="sub">Supervision</h3>
-            <ul class="plain">
-              <li>Co-supervisor of one ongoing PhD, Institute of Bangladesh Studies, University of Rajshahi</li>
-              <li>MBA theses: one completed, three ongoing</li>
-              <li>MBA research papers: 24 completed, four ongoing</li>
-            </ul>
-            <p>I welcome enquiries from prospective research students in sustainable tourism, technology adoption, entrepreneurship and HRM.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="service">
-    <div class="wrap">
-      <div><h2>Service</h2><p class="sec-note">Peer review, editorial work and university leadership.</p></div>
-      <div class="body">
-        <div class="figure">
-          <div><b>80</b><small>Verified reviews</small></div>
-          <div><b>31</b><small>Journals and grant bodies</small></div>
-        </div>
-        <div>
-          <h3 class="sub">Journals reviewed for (ORCID-verified counts)</h3>
-          <ul class="reviews">
-            <li><span>Journal of Hospitality and Tourism Insights</span><span>12</span></li>
-            <li><span>Discover Sustainability</span><span>8</span></li>
-            <li><span>Journal of Research in Interactive Marketing</span><span>6</span></li>
-            <li><span>Scientific Reports</span><span>6</span></li>
-            <li><span>Humanities &amp; Social Sciences Communications</span><span>5</span></li>
-            <li><span>Social Sciences &amp; Humanities Open</span><span>5</span></li>
-            <li><span>Journal of Global Entrepreneurship Research</span><span>4</span></li>
-            <li><span>Discover Cities</span><span>3</span></li>
-            <li><span>Acta Psychologica</span><span>2</span></li>
-            <li><span>Asia Pacific Journal of Marketing and Logistics</span><span>2</span></li>
-            <li><span>BMC Psychology</span><span>2</span></li>
-            <li><span>Business Strategy and Development</span><span>2</span></li>
-            <li><span>Cogent Business &amp; Management</span><span>2</span></li>
-            <li><span>Quality &amp; Quantity</span><span>2</span></li>
-            <li><span>Heliyon</span><span>1</span></li>
-            <li><span>Sustainable Development</span><span>1</span></li>
-            <li><span>Journal of Quality Assurance in Hospitality &amp; Tourism</span><span>1</span></li>
-            <li><span>and 14 other journals</span><span>16</span></li>
-          </ul>
-        </div>
-        <div class="cols">
-          <div class="prose">
-            <h3 class="sub">Editorial and professional</h3>
-            <ul class="plain">
-              <li>Editorial Board Member, <i>Social Sciences &amp; Humanities in Asia Journal</i> (Malaysia)</li>
-              <li>Editorial Member, <i>Barishal University Journal of Business Studies</i></li>
-              <li>Advisory Board Member, <i>Bulletin of Business, Economics and Psychology</i> (Nepal)</li>
-              <li>Reviewer Panel Member, Grants for Advanced Research in Education (GARE), Ministry of Education, Bangladesh (2026)</li>
-              <li>Member, National Young Academy of Bangladesh</li>
-              <li>Member, World Leisure Organization</li>
-            </ul>
-          </div>
-          <div class="prose">
-            <h3 class="sub">University leadership</h3>
-            <ul class="plain">
-              <li>Member Secretary, University Ranking Committee, University of Barishal (2026–)</li>
-              <li>Member Secretary, AICIRM Committee, University of Barishal (2026–)</li>
-              <li>Librarian (additional charge), University of Barishal (2017–2018; 2024)</li>
-              <li>Assistant Proctor, University of Barishal (2016–2018)</li>
-              <li>Chairman, Department of Management Studies, Patuakhali Science and Technology University (2013–2015)</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <div class="wrap">
-      <div><h2>Contact</h2></div>
-      <div class="body">
-        <div class="contact-grid">
-          <div class="prose">
-            <h3 class="sub">Email</h3>
-            <div class="email-row"><span class="email" id="email">mshahossain@bu.ac.bd</span><button class="copy" type="button" id="copybtn">Copy</button></div>
-            <p style="color:var(--muted);font-size:.9rem">I welcome research collaboration on sustainable tourism, technology adoption and entrepreneurship.</p>
-          </div>
-          <div class="prose">
-            <h3 class="sub">Office</h3>
-            <p>Department of Management Studies<br>University of Barishal<br>Barishal-8254, Bangladesh</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+<div class="wrap pager"><span></span><a href="about.html">About →</a></div>
 </main>
-
 <footer>
   <div class="wrap">
-    <span>© 2026 Dr. Md. Shakhawat Hossain</span>
+    <span>© 2026 Dr. Md. Shakhawat Hossain · Department of Management Studies, University of Barishal</span>
     <span>Last updated October 2026</span>
   </div>
 </footer>
-
 <script>
 (function () {
   var input = document.getElementById('pubsearch');
-  var count = document.getElementById('pubcount');
-  var empty = document.getElementById('pubempty');
-  var groups = Array.prototype.slice.call(document.querySelectorAll('#publist .yeargroup'));
-  var total = document.querySelectorAll('#publist .pub').length;
-  function run() {
-    var q = (input.value || '').trim().toLowerCase();
-    var shown = 0;
-    groups.forEach(function (g) {
-      var n = 0;
-      g.querySelectorAll('.pub').forEach(function (li) {
-        var hit = !q || li.textContent.toLowerCase().indexOf(q) !== -1;
-        li.hidden = !hit; if (hit) n++;
+  if (input) {
+    var count = document.getElementById('pubcount');
+    var empty = document.getElementById('pubempty');
+    var groups = Array.prototype.slice.call(document.querySelectorAll('#publist .yeargroup'));
+    var total = document.querySelectorAll('#publist .pub').length;
+    var run = function () {
+      var q = (input.value || '').trim().toLowerCase(), shown = 0;
+      groups.forEach(function (g) {
+        var n = 0;
+        g.querySelectorAll('.pub').forEach(function (li) {
+          var hit = !q || li.textContent.toLowerCase().indexOf(q) !== -1;
+          li.hidden = !hit; if (hit) n++;
+        });
+        g.hidden = n === 0;
+        var c = g.querySelector('.count'); if (c) c.textContent = n;
+        shown += n;
       });
-      g.hidden = n === 0;
-      var c = g.querySelector('.count'); if (c) c.textContent = n;
-      shown += n;
-    });
-    count.textContent = q ? shown + ' of ' + total + ' shown' : total + ' articles';
-    empty.hidden = shown !== 0;
+      count.textContent = q ? shown + ' of ' + total + ' shown' : total + ' articles';
+      empty.hidden = shown !== 0;
+    };
+    input.addEventListener('input', run); run();
   }
-  input.addEventListener('input', run);
-  run();
-
+  var cur = document.querySelector('.bar nav a[aria-current]'), nv = document.querySelector('.bar nav');
+  if (cur && nv && nv.scrollWidth > nv.clientWidth) nv.scrollLeft = cur.offsetLeft - (nv.clientWidth - cur.offsetWidth) / 2;
   var btn = document.getElementById('copybtn');
-  btn.addEventListener('click', function () {
-    var text = document.getElementById('email').textContent;
-    function selectIt() {
-      var r = document.createRange(); r.selectNodeContents(document.getElementById('email'));
-      var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
-      btn.textContent = 'Selected';
-    }
-    if (navigator.clipboard && navigator.clipboard.writeText) {
-      navigator.clipboard.writeText(text).then(function () { btn.textContent = 'Copied'; }, selectIt);
-    } else { selectIt(); }
+  if (btn) btn.addEventListener('click', function () {
+    var el = document.getElementById('email');
+    var selectIt = function () { var r = document.createRange(); r.selectNodeContents(el); var s = window.getSelection(); s.removeAllRanges(); s.addRange(r); btn.textContent = 'Selected'; };
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(el.textContent).then(function () { btn.textContent = 'Copied'; }, selectIt);
+    else selectIt();
     setTimeout(function () { btn.textContent = 'Copy'; }, 2000);
   });
 })();
 </script>
-
 </body>
 </html>

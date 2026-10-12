@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>*,*::before,*::after{box-sizing:border-box}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Research | Dr. Md. Shakhawat Hossain</title>
+<meta name="description" content="Dr. Md. Shakhawat Hossain, Professor and Chairman, Department of Management Studies, University of Barishal, Bangladesh. Research in sustainable tourism, technology adoption, entrepreneurship and HRM.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="bar">
+  <div class="wrap">
+    <a class="mark" href="index.html">Md. Shakhawat Hossain</a>
+    <nav aria-label="Main"><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="research.html" aria-current="page">Research</a></li><li><a href="publications.html">Publications</a></li><li><a href="projects.html">Projects</a></li><li><a href="talks.html">Talks</a></li><li><a href="teaching.html">Teaching</a></li><li><a href="service.html">Service</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+  </div>
+</header>
+<main>
+<div class="banner"><div class="wrap"><p class="crumb"><a href="index.html">Home</a> / Research</p><h1>Research</h1><p>Quantitative, theory-driven research on sustainability, technology and people in emerging economies.</p></div></div>
+<section id="research" class="solo">
+    <div class="wrap">
+      
+      <div class="body">
+        <div class="themes">
+          <div class="theme">
+            <h3>Sustainable tourism and climate action</h3>
+            <ul><li>Sustainable and coastal tourism</li><li>Pro-environmental behaviour</li><li>Carbon emission reduction</li><li>Tourist satisfaction and experience</li></ul>
+          </div>
+          <div class="theme">
+            <h3>Technology adoption and digital transformation</h3>
+            <ul><li>AI and smart tourism</li><li>Digital payments and platforms</li><li>Digital entrepreneurship</li></ul>
+          </div>
+          <div class="theme">
+            <h3>Entrepreneurship and HRM</h3>
+            <ul><li>Eco-entrepreneurship and SMEs</li><li>Green HRM and employee engagement</li><li>Career intention and organisational development</li></ul>
+          </div>
+        </div>
+        <div class="prose">
+          <h3 class="sub">Approach</h3>
+          <p>My research addresses practical challenges of sustainability, technology and people management in emerging economies, with a focus on Bangladesh. I combine behavioural theories, particularly the Value-Belief-Norm theory and the Theory of Planned Behaviour, with quantitative methods such as PLS-SEM to explain how tourists, employees, entrepreneurs and organisations make decisions, including their adoption of new technologies. The aim is evidence that can inform policy and practice in line with the Sustainable Development Goals.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+<div class="wrap pager"><a href="about.html">← About</a><a href="publications.html">Publications →</a></div>
+</main>
+<footer>
+  <div class="wrap">
+    <span>© 2026 Dr. Md. Shakhawat Hossain · Department of Management Studies, University of Barishal</span>
+    <span>Last updated October 2026</span>
+  </div>
+</footer>
+<script>
+(function () {
+  var input = document.getElementById('pubsearch');
+  if (input) {
+    var count = document.getElementById('pubcount');
+    var empty = document.getElementById('pubempty');
+    var groups = Array.prototype.slice.call(document.querySelectorAll('#publist .yeargroup'));
+    var total = document.querySelectorAll('#publist .pub').length;
+    var run = function () {
+      var q = (input.value || '').trim().toLowerCase(), shown = 0;
+      groups.forEach(function (g) {
+        var n = 0;
+        g.querySelectorAll('.pub').forEach(function (li) {
+          var hit = !q || li.textContent.toLowerCase().indexOf(q) !== -1;
+          li.hidden = !hit; if (hit) n++;
+        });
+        g.hidden = n === 0;
+        var c = g.querySelector('.count'); if (c) c.textContent = n;
+        shown += n;
+      });
+      count.textContent = q ? shown + ' of ' + total + ' shown' : total + ' articles';
+      empty.hidden = shown !== 0;
+    };
+    input.addEventListener('input', run); run();
+  }
+  var cur = document.querySelector('.bar nav a[aria-current]'), nv = document.querySelector('.bar nav');
+  if (cur && nv && nv.scrollWidth > nv.clientWidth) nv.scrollLeft = cur.offsetLeft - (nv.clientWidth - cur.offsetWidth) / 2;
+  var btn = document.getElementById('copybtn');
+  if (btn) btn.addEventListener('click', function () {
+    var el = document.getElementById('email');
+    var selectIt = function () { var r = document.createRange(); r.selectNodeContents(el); var s = window.getSelection(); s.removeAllRanges(); s.addRange(r); btn.textContent = 'Selected'; };
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(el.textContent).then(function () { btn.textContent = 'Copied'; }, selectIt);
+    else selectIt();
+    setTimeout(function () { btn.textContent = 'Copy'; }, 2000);
+  });
+})();
+</script>
+</body>
+</html>
